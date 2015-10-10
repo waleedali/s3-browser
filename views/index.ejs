@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %> - Bucket: <%= bucket %></h1>
+
+    <% for(var i=0; i<contents.length; i++) {%>
+       <li>File: <%= contents[i].Key %> - Size: <%= contents[i].Size %></li>
+    <% } %>
+  </body>
+
+</html>
